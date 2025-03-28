@@ -1,4 +1,14 @@
-.Trash/
+# macOSのシステムファイル
 .DS_Store
+
+# IDEの設定ファイル
 .vscode/
-__pycache__/
+.adobe/
+
+# 一時ファイル
+.cache/
+.config/
+.docker/
+
+# その他
+*.log
