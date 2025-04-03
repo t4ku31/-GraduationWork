@@ -1,0 +1,219 @@
+cart.css
+/* 全体のコンテナ */
+.cart-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ページタイトル */
+.cart-page-title {
+  font-size: 24px;
+  color: #66c0f4;
+  margin-bottom: 20px;
+}
+
+/* カートが空の場合のメッセージ */
+.cart-empty-message {
+  text-align: center;
+  font-size: 18px;
+  color: #c7d5e0;
+  margin: 20px 0;
+}
+
+/* カート本体を2カラム: 左(アイテム一覧), 右(サマリー) */
+.cart-main {
+  display: flex;
+  gap: 20px;
+  /* 必要に応じて flex-wrap: wrap; など */
+}
+
+/* 左カラム */
+.cart-items-section {
+  flex: 3; /* 幅の割合(比率) */
+}
+
+/* 右カラム */
+.cart-summary-section {
+  flex: 1;
+}
+
+/* ==============================
+   各アイテムの横長レイアウト
+   ============================== */
+
+/* アイテム1つ分の行 */
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  background-color: #1b2838;
+  border: 1px solid #2a475e;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item-row:hover {
+  background-color: #1f2d3b;
+}
+
+/* サムネイル部分 */
+.cart-item-thumb img {
+  width: 130px;
+  height: auto;
+  border: 1px solid #2a475e;
+  border-radius: 2px;
+}
+
+/* タイトル・価格 */
+.cart-item-details {
+  flex: 1; 
+  margin-left: 15px;
+}
+
+/* タイトル */
+/* タイトルのリンク */
+.cart-item-title {
+  font-size: 16px;
+  color: #66c0f4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.cart-item-title:hover {
+  color: #4a9edc;
+  text-decoration: underline;
+}
+
+/* クリック可能なサムネイル */
+.cart-item-thumb a {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.cart-item-thumb a:hover {
+  opacity: 0.8;
+}
+
+/* 価格 */
+.cart-item-price {
+  font-size: 18px;
+  color: #66c0f4;
+}
+
+/* 削除などの操作リンク (右端) */
+.cart-item-actions {
+  margin-left: auto; /* 行末に寄せる */
+}
+
+/* リンク風ボタン */
+.cart-link-button {
+  background: none;
+  border: none;
+  color: #66c0f4;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  text-decoration: underline;
+}
+.cart-link-button:hover {
+  color: #4a9edc;
+}
+
+/* ==============================
+   サマリーボックス (右カラム)
+   ============================== */
+.cart-summary-box {
+  background-color: #1b2838;
+  border: 1px solid #2a475e;
+  border-radius: 4px;
+  padding: 20px;
+  color: #c7d5e0;
+  text-align: center;
+  /* シャドウで少し浮き上がらせる */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.cart-summary-title {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.cart-summary-price {
+  font-size: 24px;
+  color: #66c0f4;
+  margin: 0 0 15px;
+}
+
+.cart-summary-note {
+  font-size: 14px;
+  color: #8f98a0;
+  margin-bottom: 20px;
+}
+
+/* 支払いボタンのスタイル */
+.purchase-button {
+  display: inline-block;
+  width: 100%; /* 幅いっぱいにする */
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, #1a73e8, #0043ce); /* グラデーション */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  text-decoration: none;
+}
+
+/* ホバー時のエフェクト */
+.purchase-button:hover {
+  background: linear-gradient(to right, #3b89ff, #0056e0);
+  box-shadow: 0 0 10px rgba(59, 137, 255, 0.6);
+}
+
+/* アクティブ時（クリック時） */
+.purchase-button:active {
+  background: linear-gradient(to right, #1662d4, #0036b5);
+  transform: scale(0.98);
+}
+
+/* 無効時（ボタンが非アクティブのとき） */
+.purchase-button:disabled {
+  background: #4c647f;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 992px) {
+  .cart-main {
+    flex-direction: column;
+  }
+  .cart-summary-section {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-item-thumb img {
+    width: 100px;
+  }
+  .cart-item-details {
+    margin-left: 10px;
+  }
+  .cart-item-title {
+    font-size: 14px;
+  }
+  .cart-item-price {
+    font-size: 16px;
+  }
+  .cart-summary-price {
+    font-size: 20px;
+  }
+}

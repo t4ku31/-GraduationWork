@@ -1,0 +1,106 @@
+/* 全体設定 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #171a21; /* ダーク背景 */
+    color: #c7d5e0;          /* ライトテキスト */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* コンテナ */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ヘッダー */
+header, 
+#header {  /* header.jsp で #header を使っている場合 */
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #2a475e;
+}
+
+header h1, 
+#header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #66c0f4;  /* Steam風ブルー */
+}
+
+/* 注文詳細セクション */
+.order-details {
+    background-color: #2a475e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.order-details h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #66c0f4;
+    padding-bottom: 10px;
+}
+
+/* 購入ゲームセクション */
+.game-details {
+    background-color: #2a475e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.game-details h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #66c0f4;
+    padding-bottom: 10px;
+}
+
+.game-details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.game-details li {
+    border-bottom: 1px solid #3c6e91;
+    padding: 15px 0;
+}
+
+.game-details li:last-child {
+    border-bottom: none;
+}
+
+/* ゲームカード・サムネイル */
+.game-card {
+    margin-bottom: 10px;
+}
+
+.game-thumbnail {
+    width: 150px;  /* 必要に応じて調整 */
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #3c6e91;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.game-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* フッター */
+footer, 
+#footer {  /* footer.jsp で #footer を使っている場合 */
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #2a475e;
+    font-size: 0.9em;
+    margin-top: 20px;
+}

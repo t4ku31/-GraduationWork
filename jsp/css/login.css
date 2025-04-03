@@ -1,0 +1,74 @@
+/* ログインページのスタイル */
+.main-content {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.main-content h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #c7d5e0;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  max-width: 380px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #61dafb;
+}
+
+.button {
+  background-color: #61dafb;
+  color: #12161f;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+  margin: 8px;
+}
+
+.button:hover {
+  background-color: #39a9d4;
+}
+
+p {
+  margin-top: 10px;
+  color: #c7d5e0;
+}
+
+p a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}

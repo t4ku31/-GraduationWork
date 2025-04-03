@@ -1,0 +1,155 @@
+/* Steam風の全体背景 */
+body {
+    background: radial-gradient(circle at center, #1b2838 20%, #0f1722 80%);
+    color: #c7d5e0;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ヘッダーをページ上部に固定 */
+.header {
+    width: 100%;
+    background: rgba(15, 23, 34, 0.9);
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 150, 255, 0.3);
+}
+
+/* ヘッダーのコンテンツ（ロゴとメニュー） */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* ロゴ（左側） */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #66c0f4;
+    margin: 0;
+}
+
+/* ナビゲーションメニュー（右側） */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* メニュー間のスペース */
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    color: #c7d5e0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #1a9fff;
+}
+
+/* メインコンテンツの配置調整 */
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px; /* ヘッダーの高さ分の余白を確保 */
+    padding-bottom: 60px; /* フッターの高さ分の余白を確保 */
+}
+
+/* フォームのコンテナ */
+.container {
+    background: rgba(25, 34, 50, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 150, 255, 0.3);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* フッターをページ下部に固定 */
+.footer {
+    width: 100%;
+    background: rgba(15, 23, 34, 0.9);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0px -4px 10px rgba(0, 150, 255, 0.3);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* 入力フィールド */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #66c0f4;
+    border-radius: 5px;
+    color: #c7d5e0;
+    font-size: 16px;
+}
+
+.input-field:focus {
+    outline: none;
+    box-shadow: 0 0 8px #66c0f4;
+}
+
+/* ボタン */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #1a9fff, #004eff);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 150, 255, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #1a9fff, #0088ff);
+    box-shadow: 0px 6px 15px rgba(0, 150, 255, 0.6);
+}
+
+/* 戻るリンク */
+.back-link {
+    display: block;
+    margin-top: 15px;
+    color: #66c0f4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

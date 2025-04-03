@@ -1,0 +1,72 @@
+/* ゲーム一覧を縦に並べる */
+.container .game-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    margin: 20px auto !important;
+    max-width: 800px !important;
+}
+
+/* 各ゲームを1行にする */
+.container .game-item {
+    display: flex !important;
+    align-items: center !important;
+    background-color: #2a475e !important;
+    border-radius: 4px !important;
+    padding: 10px !important;
+    border: 1px solid #ccc !important;
+}
+
+/* サムネイル画像（幅200px） */
+.container .game-thumb img {
+    width: 200px !important;
+    height: auto !important;
+    margin-right: 15px !important;
+    border-radius: 4px !important;
+}
+
+/* ゲーム情報 */
+.container .game-info {
+    flex: 1 !important;
+}
+
+/* タイトル */
+.container .game-title {
+    margin: 0 !important;
+    font-size: 16px !important;
+    color: #66c0f4 !important;
+}
+
+/* リリース日・開発元 */
+.container .game-release,
+.container .game-developer {
+    margin: 5px 0 !important;
+}
+
+/* 価格表示 */
+.container .game-price {
+    width: 60px !important;
+    text-align: right !important;
+    font-weight: bold !important;
+}
+
+/* アンカータグの基本スタイル */
+.container a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+.container a:hover {
+    text-decoration: underline !important;
+}
+
+/* 検索フォームを中央寄せ */
+.search-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* 検索フォーム同士の間隔を調整 */
+.search-container form {
+    display: inline-block;
+    margin: 5px 10px;
+}

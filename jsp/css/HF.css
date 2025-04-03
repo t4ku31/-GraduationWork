@@ -1,0 +1,85 @@
+/* 全体の基本設定 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1b2838; /* Steam の背景色に近い濃紺 */
+  color: #c7d5e0; /* 明るめのグレー */
+}
+
+/* ヘッダー */
+#header {
+  background-color: #171a21; /* 非常に暗いブルー */
+  border-bottom: 1px solid #2a475e;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ナビゲーション内の設定 */
+#header nav {
+  display: flex;
+  align-items: center;
+}
+
+/* ヘッダー内のリンク（ナビゲーションの各要素） */
+#header nav a {
+  color: #c7d5e0;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* ロゴ画像のサイズ調整 */
+#header nav a img#logo {
+  height: 40px;
+}
+
+/* ヘッダー内のテキスト（<p>要素） */
+#header nav a p {
+  margin: 0;
+  padding: 0 10px;
+}
+
+/* ホバー時のリンク色変更 */
+#header nav a:hover {
+  color: #66c0f4;
+}
+
+/* フッター（元のスタイルはそのまま） */
+#footer {
+  background-color: #171a21;
+  border-top: 1px solid #2a475e;
+  padding: 20px;
+  text-align: center;
+}
+
+#footer a {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#footer a img#logo {
+  height: 40px;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #c7d5e0;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  #header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #header nav a {
+    margin: 5px;
+  }
+}
